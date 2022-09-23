@@ -1,16 +1,24 @@
 #include<stdio.h>
 main()
 {
-    int a = 55674;
-    
-    // int i=9;
-    // do
-    // {
-    //     m = a%10;
-    //     a = a/10;
-        
+    // sum of first and last digit
 
-    // } while (m>0);
+    int a;
+    printf("enter the value : ");
+    scanf("%d",&a);
+
+    int last;
+    last = a%10;
+
+    while (a>10)
+    {
+        a = a/10;
+    }
+
+    printf("first = %d\n",a);
+    printf("last = %d\n\n",last);
+    printf("sum = %d",a+last);
     
-    printf("%d",a);
+
+
 }
