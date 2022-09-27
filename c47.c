@@ -1,45 +1,33 @@
 // Write C program to enter a number and print its reverse & check weather num is palindrome or not?
 
-// UNDER CONSTRUCTION
-
 #include<stdio.h>
-main()
+int main()
 {
     int a;
     printf("enter a number : ");
     scanf("%d",&a);
 
-    int b = a;
-
-    int i;
-    for(i=0; a>0; i++)
-    {
-        a = a/10;
-    }
-    printf("total digit of number is : %d\n",i);
+    int c = a;
     
-  
-    
-    int d = 1;
+    int sum = 0 , b;
 
-    for(int e=1; e<i; e++)
+    while(a>0)
     {
         
-        d = d*10;
-        printf("d = %d\n",d);
+        b = a%10;
+        sum = (sum*10)+b;
+        a = a/10;
     }
 
-    int last = b % 10;
-    int s1 = last * d;
-   // printf("%d",s1);
+    //printf("\n%d",sum);
 
-   
-
+    if(c==sum)
+    {
+        printf("number is pelingdrom");
+    }
+    else
+    {
+        printf("not pelingdrom");
+    }
   
-
-    
-
-
-
-
-}
+   
