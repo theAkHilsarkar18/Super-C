@@ -5,6 +5,9 @@
 //4 3 2 1
 //5 4 3 2 1
 
+// under consruction
+
+
 #include<stdio.h>
 main()
 {
