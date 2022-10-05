@@ -2,6 +2,12 @@
 #include<stdio.h>
 main()
 {
+    
+                                //     under construction
+    
+  
+    
+    
     // check string is palingdrom or not.
 
     char a[100];
