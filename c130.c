@@ -17,14 +17,16 @@ main()
         }
         printf("\n");
     }
-
-    int count = 0;
     
+    int n;
+printf("enter which number fre. want you find ?");
+scanf("%d",&n);
+    int count = 0;
     for(i=0; i<4; i++)
     {
         for(j=0; j<5; j++)
         {
-            if (a[i][j]==11)
+            if (a[i][j]==n)
             {
                 count ++;
             }
@@ -33,7 +35,7 @@ main()
         
     }
 
-    printf("\nfre. of 11 is : %d \n",count);
+    printf("\nfre. of %d is : %d \n\n",n,count);
 
     // print value between 10 and 20
 
